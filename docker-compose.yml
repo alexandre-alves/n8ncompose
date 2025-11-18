@@ -5,12 +5,13 @@ version: '3.8'
     platform: linux/amd64
     environment:
       WEBHOOK_URL: ${N8N_PROTOCOL}://${SERVER_IP}
-        #    WEBHOOK_URL: ${N8N_PROTOCOL}://${SERVER_IP}:${N8N_PORT}
+      #     Para uso local via IP
+      #    WEBHOOK_URL: ${N8N_PROTOCOL}://${SERVER_IP}:${N8N_PORT}
       N8N_HOST: ${SERVER_IP}
       N8N_TRUST_PROXY: "true"
       N8N_PORT: ${N8N_PORT}
       N8N_PROTOCOL: ${N8N_PROTOCOL}
-        #      N8N_PUSH_BACKEND: sse
+      #      N8N_PUSH_BACKEND: sse
       GENERIC_TIMEZONE: ${TIMEZONE}
       N8N_LOG_LEVEL: debug
       N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE: "true"
@@ -24,7 +25,7 @@ version: '3.8'
     volumes:
       - n8n_data:/home/node/.n8n
     ports:
-      #      - "9980:${N8N_PORT}0
+      #Mudando para outra porta  - "9980:${N8N_PORT}
       - "${N8N_PORT}:${N8N_PORT}"
     depends_on:
       postgres:
@@ -67,3 +68,4 @@ volumes:
   pgdata:
   n8n_data:
   redis_data:
+

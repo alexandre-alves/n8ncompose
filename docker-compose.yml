@@ -1,5 +1,5 @@
 version: '3.8'
-
+services:
   n8n:
     image: n8nio/n8n:latest
     platform: linux/amd64
@@ -68,4 +68,5 @@ volumes:
   pgdata:
   n8n_data:
   redis_data:
+
 

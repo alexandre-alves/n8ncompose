@@ -6,7 +6,7 @@ mkdir script.sh</br>
 chmod 777 script.sh </br>
 Salve o script abaixo no arquivo: </br>
 
-#/bin/bash!
+#/bin/bash!</br>
 docker run -d \
   --name n8n \
   -p 5678:5678 \

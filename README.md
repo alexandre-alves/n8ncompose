@@ -1,10 +1,10 @@
 Para usar no Play Dokcer use esse:
 https://labs.play-with-docker.com/
 
-Crie um arquivo .sh
-mkdir script.sh
-chmod 777 script.sh
-Salve o script abaixo no arquivo:
+Crie um arquivo .sh </br>
+mkdir script.sh</br>
+chmod 777 script.sh </br>
+Salve o script abaixo no arquivo: </br>
 
 #/bin/bash!
 docker run -d \
